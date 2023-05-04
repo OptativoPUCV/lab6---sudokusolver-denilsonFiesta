@@ -127,7 +127,7 @@ Node* DFS(Node* initial, int* cont){
 
     if(nodito!=NULL) return nodito;
     
-    it = nextt(mio);
+    it = next(mio);
   }
   
   return NULL;
