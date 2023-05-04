@@ -119,7 +119,7 @@ Node* DFS(Node* initial, int* cont){
 
   List* mio =  get_adj_nodes(initial);
 
-  Node* it  = firstList(mio);
+  Node* it  = first(mio);
 
   while(it!=NULL){
 
@@ -127,7 +127,7 @@ Node* DFS(Node* initial, int* cont){
 
     if(nodito!=NULL) return nodito;
     
-    it = nextList(mio);
+    it = nextt(mio);
   }
   
   return NULL;
