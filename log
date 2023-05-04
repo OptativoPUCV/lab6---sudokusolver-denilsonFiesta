@@ -94,3 +94,14 @@ Thu 04 May 2023 04:42:52 PM UTC:
  tests:  6|2
 total_score: 45/70
 4e7c61a
+Thu 04 May 2023 04:44:14 PM UTC: 
+ sudoku.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_final’:
+sudoku.c:104:9: error: unknown type name ‘itn’; did you mean ‘int’?
+  104 |     for(itn j =0; j < 9; j++){
+      |         ^~~
+      |         int
+Compilation failed
+f2305f2
