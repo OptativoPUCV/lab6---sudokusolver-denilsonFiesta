@@ -122,7 +122,7 @@ Node* DFS(Node* initial, int* cont){
   Node* it  = first(mio);
 
   while(it!=NULL){
-    *cont ++;
+    (*cont) ++;
     Node* nodito = DFS(it, cont);
     
     if(nodito!=NULL) return nodito;
