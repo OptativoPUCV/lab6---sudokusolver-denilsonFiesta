@@ -63,3 +63,16 @@ sudoku.c:53:51: error: expected ‘;’ before ‘}’ token
       |         ~                                          
 Compilation failed
 ebbd140
+Thu 04 May 2023 04:39:59 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:54: error: expected ‘;’ before ‘}’ token
+   53 |           if(n->sudo[i][j] == n->sudo[x][j]) return 0
+      |                                                      ^
+      |                                                      ;
+   54 |         }
+      |         ~                                             
+Compilation failed
+3b34c43
