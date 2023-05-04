@@ -105,3 +105,9 @@ sudoku.c:104:9: error: unknown type name ‘itn’; did you mean ‘int’?
       |         int
 Compilation failed
 f2305f2
+Thu 04 May 2023 04:44:19 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 55/70
+770765c
