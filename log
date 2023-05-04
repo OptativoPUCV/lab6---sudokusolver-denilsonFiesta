@@ -1,0 +1,20 @@
+Thu 04 May 2023 04:31:53 PM UTC: 
+ sudoku.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   59 |       if(n -> sudo[i][j] = 0){
+      |          ^
+sudoku.c:63:16: error: expected identifier before ‘[’ token
+   63 |           new->[i][j] = k;
+      |                ^
+sudoku.c:55:10: error: unused variable ‘y’ [-Werror=unused-variable]
+   55 |   int x, y;
+      |          ^
+sudoku.c:55:7: error: unused variable ‘x’ [-Werror=unused-variable]
+   55 |   int x, y;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+6b49df8
