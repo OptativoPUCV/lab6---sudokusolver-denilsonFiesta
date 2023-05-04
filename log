@@ -46,3 +46,20 @@ Thu 04 May 2023 04:32:43 PM UTC:
  tests:  2|4
 total_score: 15/70
 5071c0d
+Thu 04 May 2023 04:39:48 PM UTC: 
+ sudoku.c | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:53:31: error: ‘sudo’ undeclared (first use in this function)
+   53 |           if(n->sudo[i][j] == sudo[x][j]) return 0
+      |                               ^~~~
+sudoku.c:53:31: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:53:51: error: expected ‘;’ before ‘}’ token
+   53 |           if(n->sudo[i][j] == sudo[x][j]) return 0
+      |                                                   ^
+      |                                                   ;
+   54 |         }
+      |         ~                                          
+Compilation failed
+ebbd140
