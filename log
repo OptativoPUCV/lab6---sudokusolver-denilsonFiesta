@@ -29,3 +29,14 @@ sudoku.c:57:10: error: suggest parentheses around assignment used as truth value
 cc1: all warnings being treated as errors
 Compilation failed
 8068606
+Thu 04 May 2023 04:32:22 PM UTC: 
+ sudoku.c | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:57:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   57 |       if(n->sudo[i][j] = 0){
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+e49dc5f
