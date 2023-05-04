@@ -115,7 +115,7 @@ Node* DFS(Node* initial, int* cont){
 
   if(is_final(initial)) return initial;
   
-  if(inital == NULL) return NULL;
+  if(initial == NULL) return NULL;
 
   List* mio =  get_adj_nodes(initial);
 
