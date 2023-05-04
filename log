@@ -111,3 +111,27 @@ Thu 04 May 2023 04:44:19 PM UTC:
  tests:  7|1
 total_score: 55/70
 770765c
+Thu 04 May 2023 04:53:58 PM UTC: 
+ sudoku.c | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:118:6: error: ‘inital’ undeclared (first use in this function); did you mean ‘initial’?
+  118 |   if(inital == NULL) return NULL;
+      |      ^~~~~~
+      |      initial
+sudoku.c:118:6: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:122:15: error: implicit declaration of function ‘firstList’ [-Werror=implicit-function-declaration]
+  122 |   Node* it  = firstList(mio);
+      |               ^~~~~~~~~
+sudoku.c:122:15: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+sudoku.c:130:10: error: implicit declaration of function ‘nextList’; did you mean ‘createList’? [-Werror=implicit-function-declaration]
+  130 |     it = nextList(mio);
+      |          ^~~~~~~~
+      |          createList
+sudoku.c:130:8: error: assignment to ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  130 |     it = nextList(mio);
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+4edeaba
